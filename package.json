@@ -1,0 +1,20 @@
+{
+  "name": "db-starter",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "inquirer": "^6.3.1",
+    "node-cmd": "^3.0.0"
+  },
+  "bin": {
+    "db-starter": "index.js"
+  }
+}

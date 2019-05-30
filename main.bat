@@ -1,0 +1,1 @@
+cmd /k C:\"Program Files"\nodejs\node.exe	C:\Users\I353419\Desktop\db-starter\index.js
