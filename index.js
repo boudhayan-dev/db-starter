@@ -37,8 +37,9 @@ const getUserDetails= async () => {
 const neoCli =  async (username,password,database) => {
     return cmd.get(`neo display-db-info -a ${username.toLowerCase()}sapdev -h int.sap.hana.ondemand.com -u ${username} -p ${password} -i ${database}`,
         function (error, data, stderr) {
-            
+        
             if (data.indexOf("STOPPED") != -1) {
+
                 console.log("DB Status : ",chalk.red.bold("STOPPED"))
                 console.log("Attempting to start DB . . .")
                 
@@ -56,8 +57,15 @@ const neoCli =  async (username,password,database) => {
                 )
 
             }
+            
             else{
-                console.log("DB Status : ", chalk.green.bold("STARTED"))
+                if(data.indexOf('properties')!=-1){
+                    console.log("DB Status : ", chalk.green.bold("STARTED"))
+                }
+                else{
+                    console.log("Error : ", chalk.red.bold("Database not found. Please check the name."))
+                }
+                
             }
         }
     )
