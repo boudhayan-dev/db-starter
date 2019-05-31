@@ -1,8 +1,5 @@
 # Database Starter
 
-![Demo]()
-
-
 This is a simple utility script created using NodeJS to enable the restarting of existing DB in SAP CP.
 
 ## Requirements
@@ -49,6 +46,12 @@ The script can be invoked from the command line or you can also schedule the scr
 * Run using windows scheduler tool
 
     Add the `main.bat` (created in the above step) as the script in windows scheduler to be run daily at your chosen time.
+
+
+## Demo
+
+
+<h1 align="center"> <p align="center"><img src="demo.PNG" alt="demo" width="500" height ="450" align='center'/></p> </h1>
 
 
  
