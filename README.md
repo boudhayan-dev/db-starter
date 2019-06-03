@@ -39,7 +39,10 @@ The script can be invoked from the command line or you can also schedule the scr
 
         * Edit the `main.bat`  file as follows -
 
-            `cmd /k C:\"Program Files"\path\to\node.exe	C:\Users\path\to\index.js`
+            ```
+            cd C:\Users\path\to\parent_folder
+            cmd /k C:\"Program Files"\path\to\node.exe	C:\Users\path\to\index.js
+            ```
         
         * Double click on `main.bat` to run it.
 
